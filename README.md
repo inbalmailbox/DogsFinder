@@ -2,11 +2,11 @@
 Welcome to DogAdoptionApp, an Angular-based application designed to help dog lovers find their perfect furry companion! This app allows users to browse available dogs, learn more about each pup, and even apply for adoption.
 
 🚀 Features
-# Browse Available Dogs – View a list of adorable dogs looking for a home.
-# Detailed Dog Profiles – Click on a dog to see its breed, age, temperament, and other details.
-# Adoption Application – Submit an application to adopt a dog directly from the app.
-# User Authentication – Log in or sign up to save your favorite dogs.
-# Admin Panel – Manage dog listings and adoption requests.
+- Browse Available Dogs – View a list of adorable dogs looking for a home.
+- Detailed Dog Profiles – Click on a dog to see its breed, age, temperament, and other details.
+- Adoption Application – Submit an application to adopt a dog directly from the app.
+- User Authentication – Log in or sign up to save your favorite dogs.
+- Admin Panel – Manage dog listings and adoption requests.
 
 🛠️ Getting Startedgit
 1️⃣ Clone the Repository
