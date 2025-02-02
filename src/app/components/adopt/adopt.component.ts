@@ -43,10 +43,10 @@ export class AdoptComponent implements OnDestroy {
       this.loading = true; 
 
       setTimeout(() => {
-        this.loading = true;
+        this.loading = false;
         alert('Your adoption request has been registered in the system');
-     //   this.form.reset();
-      }, 9000); 
+        this.form.reset();
+      }, 2000); 
     }
   }
 

@@ -8,7 +8,7 @@ Welcome to DogAdoptionApp, an Angular-based application designed to help dog lov
 # User Authentication – Log in or sign up to save your favorite dogs.
 # Admin Panel – Manage dog listings and adoption requests.
 
-🛠️ Getting Started
+🛠️ Getting Startedgit
 1️⃣ Clone the Repository
 bash
 Copy
