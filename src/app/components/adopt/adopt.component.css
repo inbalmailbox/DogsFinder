@@ -1,0 +1,53 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Bone Shape */
+.bone {
+    position: relative;
+    width: 120px; /* Bone length */
+    height: 40px; /* Bone thickness */
+    background-color: #ffffff; /* Bone color */
+    border: 4px solid #c69c6d; /* Brown border */
+    border-radius: 20px; /* Smooth rounded edges */
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+/* Left and Right Ends */
+.bone::before,
+.bone::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 4px solid #c69c6d; /* Matching border */
+    border-radius: 50%; /* Rounded end */
+}
+
+/* Left End */
+.bone::before {
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+/* Right End */
+.bone::after {
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

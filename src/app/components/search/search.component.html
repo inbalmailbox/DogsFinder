@@ -1,0 +1,39 @@
+<form [formGroup]="form" class="mb-4">
+  <div class="row">
+    
+    <div class="col">
+      <label>Breed</label>
+      <select formControlName="breed" class="form-control">
+        <option *ngFor="let breed of breeds" [value]="breed.breed">{{ breed.breed }}</option>
+      </select>
+    </div>
+
+ 
+    <div class="col">
+      <label>Sub Breed</label>
+      <select formControlName="subBreed" class="form-control" [disabled]="!form.value.breed">
+        <option *ngFor="let sub of getSubBreeds()" [value]="sub">
+          {{ sub }}
+        </option>
+      </select>
+    </div>
+
+    <div class="col">
+      <label>Count</label>
+      <input 
+        type="number" 
+        formControlName="count" 
+        min="1" 
+        max="50" 
+        class="form-control" 
+        [disabled]="!form.value.breed"
+      />
+    </div>
+  </div>
+</form>
+
+<div class="row">
+  <div class="col-3" *ngFor="let image of images">
+    <img [src]="image" class="img-thumbnail" alt="dog" />
+  </div>
+</div>
